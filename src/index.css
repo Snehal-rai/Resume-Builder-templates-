@@ -1,0 +1,227 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+body {
+  margin: 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(188, 205, 164);
+  /* place-items: center;
+  min-width: 320px;
+  min-height: 100vh; */
+}
+
+/* a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+/* } */
+
+button {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #3b89a8;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #ba3b94;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} 
+form{
+  border: 1px solid rgb(210, 15, 44);
+  border-radius: 10px;
+  width: 900px;
+  background-color: rgb(140, 104, 104);
+  box-shadow: 5px 5px 5px 5px rgb(45, 196, 18);
+}
+label{
+  margin: 10px;
+}
+input{
+  height: 30px;
+  width: 300px;
+  margin: 10px;
+}
+textarea{
+  height: auto;
+  width: 300px;
+  margin: 10px;
+}
+.gender{
+  height: 20px;
+  width: 20px;
+
+}
+h4{
+  margin: 10px;
+}
+
+#preview-content {
+  border: 2px solid black; /* Increased border thickness for emphasis */
+  width: 550px;
+  height: auto;
+  display: flex;
+  background: linear-gradient(to right, #459dba, #198591); /* Gradient background */
+  margin-top: 0;
+  padding: 20px; /* Padding added for internal spacing */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Box shadow for 3D effect */
+  border-radius: 10px; /* Rounded corners for a smoother look */
+  flex-direction: column; /* Ensures the content is arranged vertically */
+  align-items: center; /* Centers children horizontally */
+  justify-content: center; /* Centers children vertically */
+}
+
+.img{
+  background-color:grey;
+  /* display: flex;
+  justify-self: center;
+  align-items: center; */
+}
+.content {
+  margin-left: 20px; /* Ensures there is a space from the left edge */
+  background-color: #7fa8a1; /* Subdued teal for a calm, professional look */
+  color: rgb(199, 36, 142); /* A vibrant pink color for text, ensuring good contrast */
+  width: 80%; /* Increases the width to occupy more space */
+  padding: 15px; /* Adds padding for internal spacing */
+  border-radius: 8px; /* Rounds the corners for a softer look */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+  /* body{
+    display:flex;
+  } */
+}
+@media screen and (max-width:600px) {
+  body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #preview-content{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/* ResumeBuilder.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.form-card {
+  width: 80%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.highlightedLabel {
+  font-size: 1.2em; /* Increase the font size */
+  color: #28527a; /* A distinct color */
+  font-weight: bold; /* Make it bold */
+  margin-bottom: 5px; /* Space below the label */
+  display: block; /* Ensure it occupies its own line */
+}
+
+
+.effect input, .effect textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.preview-content {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+}
+
+.img img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+}
+
+.content {
+  text-align: left;
+}
